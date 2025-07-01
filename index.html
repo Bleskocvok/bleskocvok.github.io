@@ -38,28 +38,51 @@ a.box div {
     background-color: black;
     color: #dddddd;
     transition: 0.3s;
+    position: relative;
 }
 
 a.box div:hover {
     background-color: #2d2d2d;
 }
 
-#mmo div {
+#mmo div.title {
     /*background-image: url("mmo.png");*/
 }
-#mmo div:hover {
+#mmo div.title:hover {
     /*background-image: url("mmo_hover.png");*/
     /*color: #cd8400;*/
     text-shadow: 4px 4px #cd8400;
 }
 
-#git div {
+#git div.title {
     /*background-image: url("git.png");*/
 }
-#git div:hover {
+#git div.title:hover {
     /*background-image: url("git_hover.png");*/
     /*color: #6e007b;*/
     text-shadow: 4px 4px #992ca5;
+}
+
+.box div.title div {
+    position: absolute;
+    text-align: center;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    top: 100px;
+    left: 60px;
+    font-size: 0.245em;
+    background-color: red;
+    box-shadow: none;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    rotate: -30deg;
+    color: white;
+    text-shadow: none;
+    font-weight: bold;
+}
+#mmo div.title div {
+    rotate: 12deg;
 }
 </style>
 
@@ -72,8 +95,8 @@ a.box div:hover {
 
 <img class="wet_floor" alt="wet floor" src="wet_floor.png">
 
-<a class="box" href="https://github.com/Bleskocvok" id="git"><div>Github</div></a>
-<a class="box" href="https://mylittlemmo.8u.cz" id="mmo"><div>MMO Game</div></a>
+<a class="box" href="https://github.com/Bleskocvok" id="git"><div class="title">Github<div>Click me</div></div></a>
+<a class="box" href="https://mylittlemmo.8u.cz" id="mmo"><div class="title">MMO Game<div>Click me</div></div></a>
 
 <img class="trol" alt="unhappy troll" src="unhappy_troll.gif">
 
