@@ -85,8 +85,34 @@ a.box div:hover {
     rotate: 12deg;
 }
 
+img.wet_floor {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+div.banner {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #222222;
+    z-index: 100;
+}
+img.bagr {
+    max-width: 100px;
+    max-height: 100px;
+}
+
 footer {
+    background-color: #222222;
     text-align: center;
+    width: 100%;
+    float: left;
+}
+article {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 </style>
 
@@ -97,18 +123,20 @@ footer {
 
 <h1><pre>bleskocvok.net</pre></h1>
 
-<img class="wet_floor" alt="wet floor" src="wet_floor.png">
+<div class="banner" id="bagr_header">
+    <img class="bagr" alt="bagr" src="bagr.png">
+    <pre>Construction site</pre>
+</div>
 
-<a class="box" href="https://github.com/Bleskocvok" id="git"><div class="title">Github<div>Click me</div></div></a>
-<a class="box" href="https://mylittlemmo.8u.cz" id="mmo"><div class="title">MMO Game<div>Click me</div></div></a>
+<article>
+    <a class="box" href="https://github.com/Bleskocvok" id="git"><div class="title">Github<div>Click me</div></div></a>
+    <a class="box" href="https://mylittlemmo.8u.cz" id="mmo"><div class="title">MMO Game<div>Click me</div></div></a>
+    <img class="wet_floor" alt="wet floor" src="wet_floor.png">
+</article>
 
-<h2><pre>Construction site</pre></h2>
-<img class="bagr" alt="bagr" src="bagr.png">
-
-<hr>
 
 <footer>
-<img class="trol" alt="unhappy troll" src="unhappy_troll.gif">
+    <img class="trol" alt="unhappy troll" src="unhappy_troll.gif">
 </footer>
 
 </div>
