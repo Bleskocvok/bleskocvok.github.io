@@ -25,52 +25,56 @@ h1 {
     text-align: center;
 }
 
-a.box div {
+.box {
+    position: relative;
     width: 300px;
     height: 150px;
     float: left;
     margin: 20px;
     box-shadow: 5px 5px 10px #444444;
+    background-color: black;
+}
+
+.box div.title {
     font-family: monospace;
     text-align: center;
     font-size: 4em;
     line-height: 200%;
-    background-color: black;
     color: #dddddd;
     transition: 0.3s;
-    position: relative;
 }
 
-a.box div:hover {
+.box:hover {
     background-color: #2d2d2d;
 }
 
-#mmo div.title {
-    /*background-image: url("mmo.png");*/
-}
-#mmo div.title:hover {
-    /*background-image: url("mmo_hover.png");*/
-    /*color: #cd8400;*/
+#mmo div:hover {
     text-shadow: 4px 4px #cd8400;
 }
 
-#git div.title {
-    /*background-image: url("git.png");*/
-}
-#git div.title:hover {
-    /*background-image: url("git_hover.png");*/
-    /*color: #6e007b;*/
+#git div:hover {
     text-shadow: 4px 4px #992ca5;
 }
 
-.box div.title div {
+#tanks div.title {
+    font-size: 2em;
+}
+#tanks div:hover {
+    text-shadow: 2px 2px #fcabf3;
+}
+
+.box .wrapper {
+    position: relative;
+}
+
+.box .click {
     position: absolute;
     text-align: center;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
-    top: 100px;
+    top: 25px;
     left: 60px;
-    font-size: 0.245em;
+    font-size: 12px;
     background-color: red;
     box-shadow: none;
     width: 80px;
@@ -80,9 +84,33 @@ a.box div:hover {
     color: white;
     text-shadow: none;
     font-weight: bold;
+    transition: 0.2s;
 }
-#mmo div.title div {
+
+.box:hover .click {
+    font-size: 20px;
+    width: 120px;
+    height: 25px;
+}
+
+#mmo div.click {
     rotate: 12deg;
+}
+#tanks div.click {
+    top: 80px;
+    rotate: -5deg;
+}
+
+.box .info {
+    font-size: 10px;
+    background-color: #fcabf3;
+    width: 30%;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-size: 10px;
 }
 
 img.wet_floor {
@@ -129,11 +157,40 @@ article {
 </div>
 
 <article>
-    <a class="box" href="https://github.com/Bleskocvok" id="git"><div class="title">Github<div>Click me</div></div></a>
-    <a class="box" href="https://mylittlemmo.8u.cz" id="mmo"><div class="title">MMO Game<div>Click me</div></div></a>
+    <a href="https://github.com/Bleskocvok" id="git">
+        <div class="box">
+            <div class="title">Github</div>
+            <div class="wrapper"><div class="click">Click me</div></div>
+        </div>
+    </a>
+
+    <a href="https://mylittlemmo.8u.cz" id="mmo">
+        <div class="box">
+            <div class="title">MMO Game</div>
+            <div class="wrapper"><div class="click">Click me</div></div>
+        </div>
+    </a>
+
+    <a href="https://github.com/Bleskocvok/project_jumpy_tanx" id="tanks">
+        <div class="box">
+            <div class="title">Silly Tanks Game</div>
+            <div class="wrapper">
+                <div class="info">They jump!</div>
+                <div class="click">Click me</div>
+            </div>
+        </div>
+    </a>
     <img class="wet_floor" alt="wet floor" src="wet_floor.png">
 </article>
 
+<!--<article>-->
+<!--    <h2>Nerd info</h2>-->
+<!--    <ul>-->
+<!--        <li>C++</li>-->
+<!--        <li>Haskell</li>-->
+<!--        <li>Cuda</li>-->
+<!--    </ul>-->
+<!--</article>-->
 
 <footer>
     <img class="trol" alt="unhappy troll" src="unhappy_troll.gif">
