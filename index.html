@@ -56,6 +56,9 @@ h1 {
 #git:hover .title {
     text-shadow: 4px 4px #992ca5;
 }
+#git .title {
+    font-size: 3em;
+}
 
 #tanks .title {
     font-size: 2em;
@@ -130,6 +133,18 @@ h1 {
     transition: 0.2s;
 }
 
+#git div.info {
+    background-color: #992ca5;
+    color: white;
+}
+
+#git:hover div.info {
+    rotate: 15deg;
+    width: 140px;
+    height: 25px;
+    font-size: 15px;
+}
+
 img.wet_floor {
     max-width: 200px;
     max-height: 200px;
@@ -179,6 +194,7 @@ article {
     <a href="https://github.com/Bleskocvok" id="git">
         <div class="box">
             <div class="title">Github</div>
+            <div class="info">Contains code!</div>
             <div class="wrapper"><div class="click">Click me</div></div>
         </div>
     </a>
