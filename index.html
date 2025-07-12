@@ -97,14 +97,6 @@ h1 {
     text-shadow: none;
 }
 
-.box:hover .info {
-    font-size: 20px;
-    width: 140px;
-    height: 25px;
-    rotate: -20deg;
-    border-radius: 20px;
-}
-
 .box .click:hover {
     text-shadow: none;
 }
@@ -139,6 +131,14 @@ h1 {
     font-family: monospace;
     font-weight: bold;
     transition: 0.2s;
+}
+
+.box:hover .info {
+    font-size: 20px;
+    width: 140px;
+    height: 25px;
+    rotate: -20deg;
+    border-radius: 20px;
 }
 
 #git div.info {
@@ -203,15 +203,19 @@ article {
     <a href="https://github.com/Bleskocvok" id="git">
         <div class="box">
             <div class="title">Github</div>
-            <div class="info">Contains code!</div>
-            <div class="wrapper"><div class="click">Click me</div></div>
+            <div class="wrapper">
+                <div class="info">Contains code!</div>
+                <div class="click">Click me</div>
+            </div>
         </div>
     </a>
 
     <a href="https://mylittlemmo.8u.cz" id="mmo">
         <div class="box">
             <div class="title">MMO Game</div>
-            <div class="wrapper"><div class="click">Click me</div></div>
+            <div class="wrapper">
+                <div class="click">Click me</div>
+            </div>
         </div>
     </a>
 
