@@ -1,0 +1,9 @@
+# Privacy
+
+When playing the game, there is an in-game chat. All messages sent to the chat
+are broadcasted to all other players currently connected on the same server.
+
+## Login
+
+When connecting to or disconnecting from an official game server, the player
+game nickname is announced to in-game chat and all connected players can read it.
